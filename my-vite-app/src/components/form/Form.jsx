@@ -1,12 +1,14 @@
 import { useState } from "react";
 
-export default function FlashForm() {
+export default function FlashForm({onSubmit}) {
   //useState hoook used to take care of the formdata state
 
   const [formData, setFormData] = useState({ question: "", answer: "" });
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    onSubmit(formData);
+    setFormData({question:"", answer:""});
     //prevent default stops default behaviour going to the address bar
     console.log("Form has been submitted:", formData);
   };
