@@ -10,8 +10,8 @@ export default function Flashcard( {question, answer}){
         
 
     return (
-        <div className="Flashcard" onClick = {handleToggle}>
-            {isQuestion ? (<p>🤨 {question}</p>) : (<p>🤩 {answer}</p>)}; 
+        <div className={`Flashcard ${isQuestion ? "question-color" : "answer-color"}`} onClick = {handleToggle}>
+            {isQuestion ? (<p>🤨 <br></br><br></br> {question}</p>) : (<p>🤩<br></br><br></br> {answer}</p>)}
         </div>
     );
 }
