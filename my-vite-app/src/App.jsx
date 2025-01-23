@@ -1,12 +1,21 @@
 import "./App.css";
 import Header from "./components/Header";
+
+import FlashForm from "./components/form/Form.jsx";
+
 import Footer from "./components/Footer";
+
 
 function App() {
   return (
     <>
-      <Header/>
+
+      <Header />
+      <FlashForm />
+
+
       <Footer/>
+
     </>
   );
 }
