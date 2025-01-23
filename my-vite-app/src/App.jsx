@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Flashcard from "./components/flashcards/FlashCard.jsx";
 import FlashForm from "./components/form/Form.jsx";
 
-import Footer from "./components/Footer";
+import Footer, { Footer2 } from "./components/Footer";
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
       
 
       <Footer/>
+      <Footer2/>
 
     </>
   );
