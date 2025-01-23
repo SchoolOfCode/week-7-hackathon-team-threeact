@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Form.css";
 
 export default function FlashForm({onSubmit}) {
   //useState hoook used to take care of the formdata state
@@ -22,26 +23,31 @@ export default function FlashForm({onSubmit}) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
+    <div className="formContainer">
+      <form onSubmit={handleSubmit} id="flashForm">
+      <label className="formLabel">
         Question:
         <input
+          className="formInput"
           type="text"
           name="question"
           value={formData.question}
           onChange={handleChange}
         />
       </label>
-      <label>
+      <label className="formLabel">
         Answer:
         <input
+          className="formInput"
           type="text"
           name="answer"
           value={formData.answer}
           onChange={handleChange}
         />
       </label>
-      <button type="submit">Submit</button>
+      <button type="submit" id="add">Add</button>
     </form>
+    </div>
+    
   );
 }
