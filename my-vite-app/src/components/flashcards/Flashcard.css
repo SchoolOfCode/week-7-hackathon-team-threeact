@@ -1,6 +1,20 @@
-.Flashcard {
-    background-color: blue;
-    width: 50px;
-    height: 50px;
-    justify-content: center;
+
+.Flashcard  {
+    width: 70%;
+    max-width: 400px;    
+    color: #fff;
+    margin: 100px auto 0;
+    border: 2px ridge #000000;
+    border-radius: 10px;
+    padding: 40px 35px;
+    text-align: center;
+    font-weight: 500;
+    font-size-adjust: 0.8;
+}
+
+.question-color {
+    background-color: #323949;
+}
+.answer-color {
+    background-color: #06B1DF;
 }
