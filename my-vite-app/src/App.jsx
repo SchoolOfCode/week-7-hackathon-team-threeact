@@ -3,6 +3,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Flashcard from "./components/flashcards/FlashCard.jsx";
 import FlashForm from "./components/form/Form.jsx";
+//import FlashCardContainer from "./components/flashcards/FlashCardContainer.jsx";
 
 import Footer, { Footer2 } from "./components/Footer";
 
@@ -17,12 +18,11 @@ function App() {
 
       <Header />
       <FlashForm onSubmit={handleFormSubmit}/>
-      {flashCards.map((flashCard, index) => (
-        <Flashcard question={flashCard.question} answer={flashCard.answer}/>
+      {flashCards.map((flashcard, index) => (
+        <Flashcard question={flashcard.question} answer={flashcard.answer}/>
       ) )}
-      
-
       <Footer/>
+
       <Footer2/>
 
     </>

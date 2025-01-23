@@ -1,0 +1,37 @@
+.formContainer{
+    background-color: rgb(35,39,49);
+    display:flexbox;
+    margin-top: -10px;
+    padding: 10px;
+}
+#flashForm{
+    display: flex;
+    padding: 10px;
+    margin-left: 30%;
+
+}
+.formInput{
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color:#2f323c;
+    border: 1px #2f323c;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    margin-left: 20px;
+    
+}
+.formLabel{
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
+#add{
+    background-color: rgba(6,177,223,255);
+    margin-left: 15px;
+    color: white;
+    border-radius: 10px;
+
+}
