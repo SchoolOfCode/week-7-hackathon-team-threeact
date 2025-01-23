@@ -3,7 +3,9 @@
 
 .question-color {
     background-color: #323949;
+    transition: transform 1s ease, background-color 1s ease;
 }
 .answer-color {
     background-color: #06B1DF;
+    transition: transform 1s ease, background-color 1s ease;
 }

@@ -5,7 +5,7 @@ import Flashcard from "./components/flashcards/FlashCard.jsx";
 import FlashForm from "./components/form/Form.jsx";
 //import FlashCardContainer from "./components/flashcards/FlashCardContainer.jsx";
 
-import Footer from "./components/Footer";
+import Footer, { Footer2 } from "./components/Footer";
 
 
 function App() {
@@ -22,6 +22,9 @@ function App() {
         <Flashcard question={flashcard.question} answer={flashcard.answer}/>
       ) )}
       <Footer/>
+
+      <Footer2/>
+
     </>
   );
 }
