@@ -1,7 +1,8 @@
 import { useState } from "react"
+
 import "./Flashcard.css"
 
-export default function Flashcard(){
+export default function Flashcard( {question, answer}){
     // Will be a image/button to allow change of state between Q and A 
         function Toggle() {
             const [isQuestion, setIsQuestion] = useState(true);
@@ -9,10 +10,10 @@ export default function Flashcard(){
         }
 
     return (
-        <div className="Flashcard">
-            {/* <h2> {emoji} </h2>
-            <h3> {QandA} </h3> */}
-            <button> X </button>
+        <div className="Flashcard" onClick = {handleToggle}>
+            {isQuestion ? (<p>🤨 {question}</p>) : (<p>🤩 {answer}</p>)};
+            
+                        
 
         </div>
     );
