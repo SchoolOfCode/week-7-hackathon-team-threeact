@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./Flashcard.css";
 
-export default function Flashcard({ question, answer }) {
+export default function Flashcard({ question, answer, onRemove }) {
   // Will be a image/button to allow change of state between Q and A
 
   const [isQuestion, setIsQuestion] = useState(true);
@@ -26,6 +26,15 @@ export default function Flashcard({ question, answer }) {
           <br></br> {answer}
         </p>
       )}
+      <button
+        className="remove-button"
+        onClick={(e) => {
+          e.stopPropagation();
+          onRemove();
+        }}
+      >
+        X
+      </button>
     </div>
   );
 }

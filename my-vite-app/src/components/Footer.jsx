@@ -8,5 +8,5 @@ export default function Footer() {
   return <img src={footer} alt="footer" id="footer" />;
 }
 export function Footer2() {
-  return <img src={footer2} alt="footer" />;
+  return <img src={footer2} alt="footer" id="footer" />;
 }
