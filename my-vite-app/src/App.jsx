@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import FlashForm from "./components/form/Form.jsx";
 import FlashCardContainer from "./components/flashcards/FlashCardContainer.jsx";
 
-// import Footer, { Footer2 } from "./components/Footer";
+import Footer, { Footer2 } from "./components/Footer";
 
 function App() {
   const [flashCards, setFlashcards] = useState([
@@ -36,8 +36,8 @@ function App() {
         flashcards={flashCards}
         setFlashcards={setFlashcards}
       />
-      {/* <Footer />
-      <Footer2 /> */}
+      <Footer />
+      <Footer2 />
     </>
   );
 }
