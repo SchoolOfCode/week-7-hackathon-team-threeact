@@ -1,11 +1,45 @@
-
-
-
 .question-color {
-    background-color: #323949;
-    transition: transform 1s ease, background-color 1s ease;
+  background-color: #323949;
+  transition: transform 1s ease, background-color 1s ease;
+  color: #ffffff;
 }
+
 .answer-color {
-    background-color: #06B1DF;
-    transition: transform 1s ease, background-color 1s ease;
+  background-color: #06b1df;
+  transition: transform 1s ease, background-color 1s ease;
+  color: #ffffff;
+}
+
+.Flashcard {
+  position: relative;
+  box-sizing: border-box;
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 600px;
+  max-width: 900px;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Flashcard:hover {
+  transform: scale(1.05);
+}
+
+.remove-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
