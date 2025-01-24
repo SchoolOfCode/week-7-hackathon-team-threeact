@@ -23,9 +23,32 @@ function App() {
       question: "How do you pass data to a component in React?",
       answer: "Data is passed to a component via props (properties).",
     },
+    {
+      question: "What is a component in React?",
+      answer:
+        "A component is a reusable, independent piece of UI that can be a function or class.",
+    },
+    {
+      question: "How do you handle user events in React?",
+      answer:
+        "You handle events in React by adding event listeners like onClick or onChange to elements.",
+    },
+    {
+      question: "What is the difference between state and props?",
+      answer:
+        "State is local and mutable, while props are immutable and passed from parent to child components.",
+    },
+    {
+      question: "Why use className instead of class in JSX?",
+      answer:
+        "Class is a reserved word in JavaScript, so React uses className for CSS classes.",
+    },
   ]);
   const handleFormSubmit = (formData) => {
-    setFlashcards([...flashCards, formData]);
+    setFlashcards((prevFlashcards) => {
+      const updatedFlashcards = [formData, ...prevFlashcards];
+      return updatedFlashcards.slice(0, 100);
+    });
   };
 
   return (
